@@ -57,11 +57,7 @@ svuotaBiglietto.addEventListener('click' ,
         let numeroKm = document.getElementById('my_km');
         numeroKm.value = '';
 
-    }
-    ,
-    function() {
-
-        let nEta = document.getElementById('my_km');
+        let nEta = document.getElementById('my_age');
         nEta.value = '';
 
     }
