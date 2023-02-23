@@ -7,6 +7,7 @@
 body {
     background-image: url('../img/shinkansen.jpeg');
     background-size: cover;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* utlities*/
@@ -27,6 +28,10 @@ body {
     display: block;
 }
 
+.d-inline-b {
+    display: inline-block;
+}
+
 /*container top*/
 
 .container_top {
@@ -35,6 +40,11 @@ body {
     border-radius: 20px;
     background-color:rgba(100, 148, 237, 0.699);
     padding: 3rem;
+}
+
+.title {
+    vertical-align: top;
+    padding-top: 5px;
 }
 
 .card {
@@ -46,6 +56,12 @@ body {
 
 .parametro {
     width: calc(100% / 3);
+}
+
+.input_style {
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .buttons {
