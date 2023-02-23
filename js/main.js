@@ -6,26 +6,27 @@
    4 totale con massimo 2 decimali
 */
 
-const numeroKm = document.getElementById('my_km').value;
+let numeroKm = document.getElementById('my_km').value;
 document.getElementById('my_km').innerHTML = numeroKm;
 
-const nEta = document.getElementById('my_km').value;
+let nEta = document.getElementById('my_km').value;
 document.getElementById('my_age').innerHTML = nEta;
 
-const prezzoKm = 0.21;
+const creaBiglietto = document.getElementById("my_btn");
 
-let totTemp = (numeroKm * prezzoKm).toFixed(2);
-console.log (totTemp)
-
-let scontoVenti = (totTemp - ((totTemp / 100) * 20)).toFixed(2);
-
-let scontoQuaranta = (totTemp - ((totTemp / 100) * 40)).toFixed(2);
-
-const creaBiglietto = document.getElementById("my_btn")
 
 creaBiglietto.addEventListener('click',
 
     function() {
+
+        const prezzoKm = 0.21;
+
+        let totTemp = (numeroKm * prezzoKm).toFixed(2);
+        console.log (totTemp)
+
+        let scontoVenti = (totTemp - ((totTemp / 100) * 20)).toFixed(2);
+
+        let scontoQuaranta = (totTemp - ((totTemp / 100) * 40)).toFixed(2);
 
         if (nEta < 18) {
 
