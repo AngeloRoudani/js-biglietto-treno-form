@@ -32,6 +32,10 @@ body {
     display: inline-block;
 }
 
+.p-5 {
+    padding: 5px;
+}
+
 /*container top*/
 
 .container_top {
@@ -61,7 +65,20 @@ body {
 .input_style {
     border: solid 1px grey;
     border-radius: 5px;
-    padding: 5px;
+}
+
+#my_btn {
+    background-color: rgb(73, 219, 73);
+    border-radius: 5px;
+    border: solid 1px black;
+    margin: 0 2rem;
+}
+
+#my_btn_reset {
+    background-color: rgb(214, 214, 3);
+    border-radius: 5px;
+    border: solid 1px black;
+    margin: 0 2rem;
 }
 
 .buttons {
