@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/shinkansen.jpeg');
+    background-size: cover;
+}
+
+/* utlities*/
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+/*container top*/
+
+.container_top {
+    width: 60%;
+    margin: 100px auto;
+    border-radius: 20px;
+    background-color:rgba(100, 148, 237, 0.699);
+    padding: 3rem;
+}
+
+.card {
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3rem auto;
+}
+
+.parametro {
+    width: calc(100% / 3);
+}
+
+.buttons {
+    width: 100%;
+    margin-top: 3rem;
+}
