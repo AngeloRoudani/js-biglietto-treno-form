@@ -6,10 +6,10 @@
    4 totale con massimo 2 decimali
 */
 
-let numeroKm = document.getElementById('my_km').value;
+const numeroKm = document.getElementById('my_km').value;
 document.getElementById('my_km').innerHTML = numeroKm;
 
-let nEta = document.getElementById('my_km').value;
+const nEta = document.getElementById('my_km').value;
 document.getElementById('my_age').innerHTML = nEta;
 
 const creaBiglietto = document.getElementById("my_btn");
@@ -44,6 +44,26 @@ creaBiglietto.addEventListener('click',
             document.getElementById('total').innerHTML = totTemp;
 
         }
+    }
+
+)
+
+const svuotaBiglietto = document.getElementById("my_btn_reset");
+
+svuotaBiglietto.addEventListener('click' ,
+    
+    function() {
+
+        let numeroKm = document.getElementById('my_km');
+        numeroKm.value = '';
+
+    }
+    ,
+    function() {
+
+        let nEta = document.getElementById('my_km');
+        nEta.value = '';
+
     }
 
 )
