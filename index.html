@@ -32,13 +32,38 @@
 
             <div class="parametro">
                 <label class="d-block" for="my_age">Età</label>
-                <input type="text" id="my_age" class="input_style p-5">
-                <div id="chilometri"></div>
+                <select id="my_age" class="input_style p-5">
+                    <option value="Minorenne">Minorenne</option>
+                    <option value="Maggiorenne">Maggiorenne</option>
+                    <option value="Anziano">Anziano</option>
+                </select>
+                <div id="età"></div>
             </div>
 
             <div class="buttons">
                 <button id="my_btn" class="p-5">Crea biglietto</button>
                 <button id="my_btn_reset" class="p-5">Svuota</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container_top text-center">
+
+        <div>
+            <h1 class="d-inline-b title">IL TUO BIGLIETTO</h1>
+        </div>
+
+        <div class="card d-flex text-center">
+
+            <div class="parametro">
+                <div id="passenger"></div>
+            </div>
+
+
+            <div class="parametro">
+                <div id="total"></div>
             </div>
 
         </div>

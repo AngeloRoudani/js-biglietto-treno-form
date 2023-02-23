@@ -13,10 +13,17 @@ creaBiglietto.addEventListener('click',
 
     function() {
 
+        let passengerName = document.getElementById('passenger').value;
+
         let numeroKm = document.getElementById('my_km').value;
         console.log(numeroKm)
 
-        let nEta = document.getElementById('my_km').value;
+        let nEta = document.getElementById('my_age').value;
+         
+        const minorenne = nEta < 18;
+        const maggiorenne = (nEta > 18) && (nEta < 65);
+        const anziano = nEta >= 65;
+
         console.log(nEta)
 
         const prezzoKm = 0.21;
@@ -28,20 +35,20 @@ creaBiglietto.addEventListener('click',
 
         let scontoQuaranta = (totTemp - ((totTemp / 100) * 40)).toFixed(2);
 
-        if (nEta < 18) {
+        if (nEta == minorenne) {
 
             console.log(scontoVenti);
-            document.getElementById('total').innerHTML = scontoVenti;
+            document.getElementById('total').innerHTML = scontoVenti + "€";
 
-        } else if (nEta >= 65) {
+        } else if (nEta == anziano) {
 
             console.log(scontoQuaranta);
-            document.getElementById('total').innerHTML = scontoQuaranta;
+            document.getElementById('total').innerHTML = scontoQuaranta + "€";
 
-        } else  {
+        } else {
             
             console.log (totTemp);
-            document.getElementById('total').innerHTML = totTemp;
+            document.getElementById('total').innerHTML = totTemp + "€";
 
         }
     }
