@@ -8,9 +8,11 @@
 
 let numeroKm = document.getElementById('my_km').value;
 document.getElementById('my_km').innerHTML = numeroKm;
+console.log(numeroKm)
 
 let nEta = document.getElementById('my_km').value;
 document.getElementById('my_age').innerHTML = nEta;
+console.log(nEta)
 
 const creaBiglietto = document.getElementById("my_btn");
 
