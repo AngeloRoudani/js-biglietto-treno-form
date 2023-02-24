@@ -36,9 +36,13 @@ body {
     padding: 5px;
 }
 
+.text-white {
+    color: white;
+}
+
 /*container top*/
 
-.container_top {
+.container {
     width: 60%;
     margin: 100px auto;
     border-radius: 20px;
@@ -62,6 +66,7 @@ body {
     width: calc(100% / 3);
 }
 
+
 .input_style {
     border: solid 1px grey;
     border-radius: 5px;
@@ -84,4 +89,10 @@ body {
 .buttons {
     width: 100%;
     margin-top: 3rem;
+}
+
+/*container bottom*/
+
+.parametro_b {
+    width: calc(100% / 5);
 }

@@ -14,11 +14,13 @@ creaBiglietto.addEventListener('click',
     function() {
 
         let passengerName = document.getElementById('passenger').value;
+        console.log(passengerName);
 
         let numeroKm = document.getElementById('my_km').value;
-        console.log(numeroKm)
+        console.log(numeroKm);
 
         let nEta = document.getElementById('my_age').value;
+        console.log(nEta);
          
         const minorenne = nEta < 18;
         const maggiorenne = (nEta > 18) && (nEta < 65);
@@ -51,6 +53,8 @@ creaBiglietto.addEventListener('click',
             document.getElementById('total').innerHTML = totTemp + "€";
 
         }
+
+
     }
 
 )
@@ -66,6 +70,9 @@ svuotaBiglietto.addEventListener('click' ,
 
         let nEta = document.getElementById('my_age');
         nEta.value = '';
+
+        let passengerName = document.getElementById('passenger');
+        passengerName.value = '';
 
     }
 
